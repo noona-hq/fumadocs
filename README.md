@@ -2,6 +2,8 @@
 
 > Open-source documentation framework for React.js — supports Next.js, Tanstack Start, Waku, and React Router.
 
+Full documentation: https://fumadocs.dev
+
 ---
 
 ## Overview
@@ -42,6 +44,10 @@ Releases are managed via Changesets. All packages are ESM-only.
 
 Fumadocs exposes React components, MDX plugins, and utilities distributed as npm packages. `packages/ui` exports the component library; `packages/core` exports routing and data utilities. Consumers install individual packages from npm.
 
-## Dependencies
+## Distribution
 
 Standalone open-source library.
+
+## Contributing
+
+See [/.github/contributing.md](/.github/contributing.md) for contribution guidelines.
