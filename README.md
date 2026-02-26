@@ -44,4 +44,4 @@ Fumadocs exposes React components, MDX plugins, and utilities distributed as npm
 
 ## Dependencies
 
-Standalone open-source library — no dependencies on other Noona services.
+Standalone open-source library.
