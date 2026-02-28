@@ -101,7 +101,7 @@
     "remark": "^15.0.1",
     "remark-directive": "^4.0.0",
     "remark-stringify": "^11.0.0",
-    "rollup": "^4.53.3",
+    "rollup": "^4.59.0",
     "tsconfig": "workspace:*",
     "vite": "^7.2.6",
     "webpack": "^5.103.0"
