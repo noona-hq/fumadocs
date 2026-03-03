@@ -1,53 +1,24 @@
-# fumadocs
+![banner](./apps/docs/public/banner.png)
 
-> Open-source documentation framework for React.js — supports Next.js, Tanstack Start, Waku, and React Router.
+The framework for building documentation websites in any React.js frameworks.
 
-Full documentation: https://fumadocs.dev
+**Officially Supported:**
 
----
+- Next.js
+- Vite: Tanstack Start, Waku, React Router
 
-## Overview
+📘 Learn More: [Documentation](https://fumadocs.dev).
 
-A monorepo for Fumadocs — an open-source documentation framework for React.js applications, supporting Next.js, Tanstack Start, Waku, and React Router.
+## Compatibility
 
-## Tech Stack
+All packages are **ESM only**.
 
-- **Language:** TypeScript
-- **Monorepo tooling:** Turborepo + pnpm workspaces
-- **Build:** tsup
-- **Testing:** Vitest
-- **Target runtimes:** React.js (Next.js, Vite-based: Tanstack Start, Waku, React Router)
-- **Packages:** ESM-only
+## Sticker
 
-## Architecture / How it works
+![logo](./documents/logo.png)
 
-Organized as a monorepo with `packages/` and `apps/`:
+Welcome to print it out :D
 
-**Core packages:**
-- `packages/core` — core logic and utilities
-- `packages/ui` — React UI components for documentation pages
-- `packages/mdx` — MDX processing and plugin integration
-- `packages/mdx-remote` — remote MDX loading support
-- `packages/openapi` — OpenAPI spec to docs generation
-- `packages/typescript` — TypeScript API docs integration
-- `packages/twoslash` — TwoSlash code annotation support
-- `packages/content-collections` — content collections integration
-- `packages/cli` — CLI tooling
-- `packages/create-app` — project scaffolding
+## Contributions
 
-**Apps:**
-- `apps/docs` — the Fumadocs documentation site itself
-
-Releases are managed via Changesets. All packages are ESM-only.
-
-## Key Interfaces / API
-
-Fumadocs exposes React components, MDX plugins, and utilities distributed as npm packages. `packages/ui` exports the component library; `packages/core` exports routing and data utilities. Consumers install individual packages from npm.
-
-## Distribution
-
-Standalone open-source library.
-
-## Contributing
-
-See [/.github/contributing.md](/.github/contributing.md) for contribution guidelines.
+Make sure to read the [Contributing Guide](/.github/contributing.md) before submitting a pull request.
