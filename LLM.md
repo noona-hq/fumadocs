@@ -1,53 +1,25 @@
 # fumadocs
 
-> Open-source documentation framework for React.js — supports Next.js, Tanstack Start, Waku, and React Router.
+**Type:** Open-source library (NOT a Noona-internal service)
+**Language:** TypeScript
+**Purpose:** Open-source React documentation framework supporting Next.js, Tanstack Start, Waku, and React Router. Published to npm. Used by noona-docs.
 
-Full documentation: https://fumadocs.dev
-
----
-
-## Overview
-
-A monorepo for Fumadocs — an open-source documentation framework for React.js applications, supporting Next.js, Tanstack Start, Waku, and React Router.
+## Responsibilities
+- Provide React UI components for documentation sites (`packages/ui`)
+- MDX processing and plugin integration (`packages/mdx`, `packages/mdx-remote`)
+- OpenAPI spec → documentation generation (`packages/openapi`)
+- TypeScript API docs integration (`packages/typescript`)
+- CLI tooling and project scaffolding (`packages/cli`, `packages/create-app`)
 
 ## Tech Stack
-
-- **Language:** TypeScript
-- **Monorepo tooling:** Turborepo + pnpm workspaces
-- **Build:** tsup
+- **Monorepo:** Turborepo + pnpm workspaces
+- **Build:** tsup (ESM-only packages)
 - **Testing:** Vitest
-- **Target runtimes:** React.js (Next.js, Vite-based: Tanstack Start, Waku, React Router)
-- **Packages:** ESM-only
+- **Releases:** Changesets
 
-## Architecture / How it works
+## Integrations
+- **noona-docs** — internal consumer of fumadocs packages
 
-Organized as a monorepo with `packages/` and `apps/`:
-
-**Core packages:**
-- `packages/core` — core logic and utilities
-- `packages/ui` — React UI components for documentation pages
-- `packages/mdx` — MDX processing and plugin integration
-- `packages/mdx-remote` — remote MDX loading support
-- `packages/openapi` — OpenAPI spec to docs generation
-- `packages/typescript` — TypeScript API docs integration
-- `packages/twoslash` — TwoSlash code annotation support
-- `packages/content-collections` — content collections integration
-- `packages/cli` — CLI tooling
-- `packages/create-app` — project scaffolding
-
-**Apps:**
-- `apps/docs` — the Fumadocs documentation site itself
-
-Releases are managed via Changesets. All packages are ESM-only.
-
-## Key Interfaces / API
-
-Fumadocs exposes React components, MDX plugins, and utilities distributed as npm packages. `packages/ui` exports the component library; `packages/core` exports routing and data utilities. Consumers install individual packages from npm.
-
-## Distribution
-
-Standalone open-source library.
-
-## Contributing
-
-See [/.github/contributing.md](/.github/contributing.md) for contribution guidelines.
+## Route here for
+- Issues with the fumadocs framework itself (upstream open-source)
+- Do NOT route Noona documentation content issues here — route those to noona-docs
